@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Success</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Ingredient Scanner</div>
+      <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'about' %}">About</a>
+      </nav>
+    </header>
+
+    <div class="upload-success">
+      <h1>Upload Successful</h1>
+
+      <!-- Display the uploaded image -->
+      <img
+        src="{{ uploaded_image.image.url }}"
+        alt="Uploaded Image Preview"
+        id="preview-image"
+      />
+
+      <!-- Form to analyze ingredients -->
+      <form method="POST" action="{% url 'analyse_ingredients' %}">
+        {% csrf_token %}
+        <input type="hidden" name="image_id" value="{{ uploaded_image.id }}" />
+        <div class="button-container">
+          <button type="submit">Analyze Ingredients</button>
+        </div>
+      </form>
+
+      <!-- Form to Generate Video using the same image -->
+      <form method="POST" action="{% url 'generate_video' %}">
+        {% csrf_token %}
+        <input type="hidden" name="image_id" value="{{ uploaded_image.id }}" />
+        <div class="button-container">
+          <button type="submit">Generate Video</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

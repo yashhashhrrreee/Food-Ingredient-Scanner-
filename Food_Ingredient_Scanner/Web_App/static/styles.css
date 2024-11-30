@@ -1,0 +1,374 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  line-height: 1.6;
+  height: 100vh;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #111; /* Slightly lighter black */
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffc107; /* Yellow text for the logo */
+}
+
+header nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #ffc107;
+}
+
+/* Main Section */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh; /* Centers the section vertically */
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style for the container holding both images */
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Adjust the gap between the images */
+  flex-wrap: wrap;
+}
+
+/* Style for each image box */
+.image-box {
+  flex: 1;
+  max-width: 45%; /* Adjust to your preferred width */
+  text-align: center;
+}
+
+/* Style for images */
+.image-preview {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+main h1 {
+  font-size: 36px;
+  color: #ffc107;
+  text-shadow: 3px 3px 0 #222, 6px 6px 0 #444;
+  margin-bottom: 20px;
+}
+
+main p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+main button {
+  margin-top: 20px;
+  background-color: #ffc107;
+  color: #000;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+main button:hover {
+  background-color: #e0a800;
+  transform: scale(1.05);
+}
+
+/* Upload Success Page */
+.upload-success {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.upload-success img {
+  width: 30%; /* Larger for visibility */
+  height: auto;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.upload-success .button-container {
+  margin-top: 20px;
+}
+
+.upload-success button {
+  background-color: #ffc107;
+  color: #000;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin: 10px;
+}
+
+.upload-success button:hover {
+  background-color: #e0a800;
+  transform: scale(1.05);
+}
+
+/* Analysis Page */
+.analysis-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.analysis-image {
+  width: 50%; /* Larger for visibility */
+  height: auto;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.ingredient-table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+.ingredient-table th,
+.ingredient-table td {
+  padding: 10px 15px;
+  border: 1px solid #ffc107;
+  text-align: left;
+}
+
+.ingredient-table th {
+  background-color: #111;
+  color: #ffc107;
+}
+
+.ingredient-table td {
+  background-color: #222;
+}
+
+.analysis-conclusion {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #ffc107;
+  text-align: center;
+}
+
+/* Video Page */
+.video-page video {
+  width: 80%;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 20px 5%;
+  }
+
+  header nav a {
+    margin: 5px 0;
+  }
+
+  #videoPopup .popup-content {
+    width: 90%;
+  }
+
+  main h1 {
+    font-size: 28px;
+  }
+
+  main p {
+    font-size: 16px;
+  }
+
+  main button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .upload-success img {
+    width: 50%; /* Adjust for smaller screens */
+  }
+
+  .analysis-image {
+    width: 70%;
+  }
+
+  .ingredient-table {
+    width: 95%;
+  }
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  line-height: 1.6;
+  height: 100vh;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #111; /* Slightly lighter black */
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffc107; /* Yellow text for the logo */
+}
+
+header nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #ffc107;
+}
+
+/* Upload Success Page */
+.upload-success {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.upload-success img.uploaded-image {
+  width: 50%; /* Adjusted for better visibility */
+  height: auto;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.upload-success .button-container {
+  margin-top: 20px;
+}
+
+.upload-success button {
+  background-color: #ffc107;
+  color: #000;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin: 10px;
+}
+
+.upload-success button:hover {
+  background-color: #e0a800;
+  transform: scale(1.05);
+}
+
+/* Analysis Page */
+.analysis-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.analysis-image {
+  width: 50%; /* Larger for visibility */
+  height: auto;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.ingredient-table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+.ingredient-table th,
+.ingredient-table td {
+  padding: 10px 15px;
+  border: 1px solid #ffc107;
+  text-align: left;
+}
+
+.ingredient-table th {
+  background-color: #111;
+  color: #ffc107;
+}
+
+.ingredient-table td {
+  background-color: #222;
+}
+
+/* Highlighted Conclusion */
+.analysis-conclusion {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.analysis-conclusion .conclusion-status {
+  font-weight: bold;
+  font-size: 24px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.analysis-conclusion .conclusion-status.good {
+  color: #fff;
+  background-color: #28a745; /* Green for Good */
+}
+
+.analysis-conclusion .conclusion-status.bad {
+  color: #fff;
+  background-color: #dc3545; /* Red for Bad */
+}
+
+/* Video Page */
+.video-page video {
+  width: 80%;
+  border-radius: 10px;
+  margin: 20px 0;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Ingredient Scanner</div>
+      <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'about' %}">About</a>
+      </nav>
+    </header>
+
+    <main class="about-page">
+      <h1>About Our Research</h1>
+
+      <!-- First paragraph -->
+      <div class="info-box">
+        <p>
+          This project delves into advanced methodologies for enhancing data
+          representation, classification accuracy, and machine learning model
+          evaluation. It specifically addresses the persistent problem of class
+          imbalances within datasets. Class imbalance in many real-world
+          datasets generally leads to biased predictions and reduced model
+          performance. We applied the synthetic minority oversampling technique
+          approach as it is the most adopted to create synthetic samples that
+          overcome the imbalance in the dataset, thereby aiding the model in
+          better learning the underrepresented classes.
+        </p>
+      </div>
+
+      <!-- Second paragraph -->
+      <div class="info-box">
+        <p>
+          The research first divided the raw dataset into separate training and
+          testing sets in order to have a solid basis for testing the effects of
+          data preprocessing. Several data augmentation methods were used on the
+          training set with the intention of increasing feature diversity and
+          thus enhancing model generalization. The preprocessing steps greatly
+          helped in enriching the representation of the minority classes, which
+          contributed to the creation of more balanced decision-making models.
+        </p>
+      </div>
+
+      <!-- Third paragraph -->
+      <div class="info-box">
+        <p>
+          To evaluate the efficacy of these methods, we tested and compared
+          several machine learning-based classifiers, including K-Nearest
+          Neighbors or KNN. The derived performance metrics were accuracy,
+          precision, recall, F1-score, and visualized through confusion matrices
+          where the classification results were properly detailed. These
+          evaluations underpin the significant improvements in the event of
+          balanced datasets and strong augmentation of features.
+        </p>
+      </div>
+
+      <!-- Fourth paragraph -->
+      <div class="info-box">
+        <p>
+          The results of this study reflect the potential impact of new
+          preprocessing and augmentation techniques to address class imbalances
+          in a transformative manner. This is because the methods developed
+          improve model robustness and predictive accuracy, which means they
+          have a great future in improving decision-making in finance,
+          healthcare, and other areas where imbalanced datasets are prevalent.
+          Therefore, this work underscores the need for theoretical advancements
+          to be incorporated into practical implementations to provide reliable
+          and unbiased machine learning systems.
+        </p>
+      </div>
+    </main>
+
+    <!-- Contact details at the bottom -->
+    <footer class="contact-section">
+      <h2>&emsp; &emsp;Contact Us</h2>
+      <p>&emsp; &emsp; Email: support@ingredientscanner.com</p>
+      <p>&emsp; &emsp; Phone: +1-800-555-1234</p>
+      <p>&emsp; &emsp; Address: 123 Innovation Drive, Tech City, AI 98765</p>
+    </footer>
+  </body>
+</html>

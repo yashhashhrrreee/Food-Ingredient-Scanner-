@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Successful</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Ingredient Scanner</div>
+      <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'about' %}">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Upload Successful</h1>
+
+      <!-- Display the uploaded image -->
+      <h2>Uploaded Image</h2>
+      {% if uploaded_image %}
+      <div class="image-container">
+        <div class="image-box">
+          <h3>Original Image</h3>
+          <img
+            src="{{ uploaded_image.image.url }}"
+            alt="Uploaded Image"
+            class="image-preview"
+          />
+        </div>
+
+        <!-- Display the highlighted image -->
+        <div class="image-box">
+          <h3>Highlighted Image</h3>
+          {% if highlighted_image_url %}
+          <img
+            src="{{ highlighted_image_url }}"
+            alt="Highlighted Image"
+            class="image-preview"
+          />
+          {% else %}
+          <p>No highlighted image available.</p>
+          {% endif %}
+        </div>
+      </div>
+      {% else %}
+      <p>No image uploaded.</p>
+      {% endif %}
+
+      <!-- Display the health status -->
+      <h2>Health Status</h2>
+      <p class="{{ health_status|lower|slugify }}">{{ health_status }}</p>
+    </main>
+  </body>
+</html>
