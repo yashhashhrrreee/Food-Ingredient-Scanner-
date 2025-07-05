@@ -99,10 +99,10 @@ python manage.py runserver
 6. Optionally generate a video summary of the results
 
 ## Collaborators
-- **Devanshu Katiya** - ML Modeling and Data Pipeline
+- **Devanshu Katiyar** - ML Modeling and Data Pipeline
   - GitHub: [https://github.com/Devanshuk2004]
 
-- **Yashashree Bedmuths** - Backend Framework and Final Production
+- **Yashashree Bedmutha** - Backend Framework and Final Production
   - GitHub: [https://github.com/yashhashhrrreee]
 
 - **Jayraj Khivensara** - Frontend Design
