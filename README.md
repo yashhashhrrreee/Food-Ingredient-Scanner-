@@ -64,7 +64,7 @@ UploadedImage (implied from migration)
 ## Installation and Setup
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/Food-Ingredient-Scanner-.git
+git clone https://github.com/yashhashhrrreee/Food-Ingredient-Scanner-.git
 cd Food-Ingredient-Scanner-
 ```
 
